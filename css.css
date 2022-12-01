@@ -1,0 +1,123 @@
+/*Função troca cor de funco*/
+@keyframes TrocaBackGroud{
+	0%{
+		background: orangered;
+	}
+	50%{
+		background: indianred;
+	}
+	100%{
+		background: darkred;
+	}
+}
+
+
+body{
+	background: skyblue;
+
+}
+#Todo{
+	color: white;
+	margin: 0 auto;
+	width: 900px;
+}
+#fim{
+	display: none;
+}
+/*Config Tela principal*/
+#inicio{
+	animation-name: TrocaBackGroud;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+#inicio{
+	display: block;
+	position: fixed;
+	border: solid 5px black;
+	border-radius: 15px;
+	transform: translateY(20%) translateX(60%);
+	width: 400px;
+	height: 400px;
+	background: red;
+	padding: 10px;
+}
+#inicio input{
+	height: 35px;
+	width: 280px;
+	border-radius: 15px;
+	font-size: 25px;
+}
+
+#inijoga,.rj{
+	width: 100%;
+	margin-top: 20px;
+	border-radius: 15px;
+	border: solid 4px black;
+	height: 50px;
+	text-align: center;
+	font-size: 35px;
+}
+/*Fim Config Tela principal*/
+
+/*Config Tela de Fim de Jogo!!!*/
+#fim{
+	display: none;
+	position: fixed;
+	border: solid 5px black;
+	border-radius: 15px;
+	transform: translateY(20%) translateX(60%);
+	width: 400px;
+	height: 460px;
+	background: black;
+	padding: 10px;
+	text-align: center;
+}
+#fim img{
+	display: block;
+	transform: translateY(2%) translateX(60%);
+	width: 180px;
+	height: 180px;
+}
+#fim #msgV,#vc{
+	width: 100%;
+	height: 30px;
+	font-size: 30px;
+}
+	
+/*Fim Config Tela de Fim de Jogo!!!*/
+/*Config Tela de Jogo!!!*/
+#jogo{
+	display: none;
+	transform: translateY(10%) translateX(25%);
+}
+.msg{
+	display: block;
+	height: 40px;
+	color: black;
+	font-size: 30px;
+}
+
+/*Fim Config Tela de Jogo!!!*/
+.linha{
+	width: 411px;
+	height: 137px;
+	background: red;
+}
+.coluna{
+	float: left;
+	width: 133px;
+	height: 133px;
+	margin: 2px;
+	background: cyan;
+}
+.coluna img{
+	margin: 20 auto;
+	width: 120px;
+	height: 120px;
+}
+.player img{
+	width: 50px;
+	height: 50px;
+}
